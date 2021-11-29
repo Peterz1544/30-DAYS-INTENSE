@@ -64,6 +64,38 @@ button {
     padding: 20px 10px;
 }
 
+.video {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.video {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%
+}
+
+.boton {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%
+}
+
+.descarga {
+    margin: 1rem;
+}
+
+.video iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 section {
     background-color: white;
 }
