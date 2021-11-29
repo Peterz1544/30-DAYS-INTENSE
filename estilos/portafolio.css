@@ -1,0 +1,249 @@
+@import url('http://fonts.cdnfonts.com/css/qualy');
+@import url('https://allfont.net/allfont.css?fonts=caviar-dreams');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('http://fonts.cdnfonts.com/css/billion-dreams');
+:root {
+    /*========== Colors ==========*/
+    --first-color: #4D49BF;
+    --second-color: #05DBF2;
+    --body-color: #262829;
+    --title-color: #1C1C22;
+    --text-color: #c3c1e9;
+    /*========== Font and typography ==========*/
+    --body-font: 'Montserrat', sans-serif;
+    --tittle-font: 'Qualy', sans-serif;
+    --some-font: 'Billion Dreams', sans-serif;
+    --normal-font-size: .938rem;
+    --h3-font-size: 1.125rem;
+    --small-font-size: .75rem;
+    @media screen and (min-width: 968px) {
+        --normal-font-size: 1rem;
+        --h3-font-size: 1.25rem;
+        --small-font-size: .813rem;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+}
+
+.cuerpo {
+    width: 1000px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.cabecera {
+    overflow: hidden;
+    background-color: #ee2082;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.cabecera a {
+    float: left;
+}
+
+.seleccion {
+    border-bottom: 2px solid white;
+}
+
+.barra-nav a {
+    text-align: center;
+    padding: 12px;
+}
+
+.logo {
+    margin-left: 1rem;
+}
+
+.logo p {
+    margin-top: -1rem;
+}
+
+.titulo {
+    font-family: var(--tittle-font);
+    color: white;
+}
+
+.barra-nav {
+    float: right;
+}
+
+section {
+    padding-bottom: 1rem;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.pie {
+    background-color: #ee2082;
+    width: 100%;
+}
+
+.cajas {
+    display: grid;
+    grid-template-columns: [row1-start] 25% [row1-end row2-start] 50% [row2-end row3-start] 25% [row3-end];
+    align-content: center;
+}
+
+.informacion {
+    padding: 1rem;
+}
+
+.informacion li {
+    list-style-type: none;
+}
+
+.derechos a {
+    text-align: center;
+}
+
+.derechos {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.iconos {
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+/*========== universal ==========*/
+
+.imagen {
+    background-color: #ee2082;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.imagen img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.izquierda {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.derecha {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.separacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    padding: 1.5rem;
+    background-color: #ee2082;
+}
+
+.box-derecha {
+    position: relative;
+    border-radius: 0px 40px 40px 0px;
+    text-align: justify;
+}
+
+.box-izquierda {
+    position: relative;
+    border-radius: 40px 0px 0px 40px;
+    text-align: justify;
+}
+
+.text p {
+    margin: 1px;
+    font-size: 1.2rem;
+}
+
+.texto h1 {
+    color: black;
+}
+
+.tittle {
+    margin: 5px;
+    color: #ee2082;
+    font-family: var(--tittle-font);
+    font-size: 2.5rem;
+}
+
+.objetivo {
+    position: relative;
+}
+
+.objetivo img {
+    margin-top: -10px;
+    filter: grayscale(25%);
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.texto {
+    font-size: 5rem;
+    transform: translate(-50%, -0%);
+    position: absolute;
+    top: 8px;
+    right: auto;
+    left: 50%;
+    text-align: center;
+}
+
+.button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    display: inline-block;
+    background: linear-gradient(130deg, rgba(251, 251, 254, .9), rgba(251, 251, 254, .2));
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    color: var(--title-color);
+    font-weight: 500;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.derecha-b {
+    position: absolute;
+    left: 1rem;
+    bottom: 10px;
+}
+
+.izquierd-b {
+    position: absolute;
+    right: 1rem;
+    bottom: 10px;
+}
